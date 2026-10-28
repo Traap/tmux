@@ -12,6 +12,10 @@ Terminal with WSL, SSH sessions, and Neovim.
 - Adds `prefix m` and `prefix M` to turn mouse support on and off.
 - Uses `tmux-256color` and declares RGB support for `xterm-256color`,
   `ghostty`, and `kitty`.
+- Declares `extkeys` for `xterm*` so Windows Terminal can send extended keys.
+- Turns on `extended-keys` with the `csi-u` format, and
+  `allow-passthrough`, so escape sequences from a pane reach the outer
+  terminal.
 - Keeps 10,000 lines of scrollback history.
 - Sets `escape-time` to `0` for faster key response.
 - Starts window and pane indexes at `1` and automatically renumbers windows.
